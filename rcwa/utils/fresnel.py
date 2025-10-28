@@ -24,7 +24,7 @@ def rTE(source, layer1, layer2):
 
 
 def tTE(source, layer1, layer2):
-    return 1 + rTE(source, layer1, layer2);
+    return 1 + rTE(source, layer1, layer2)
 
 
 def rTM(source, layer1, layer2):
@@ -35,7 +35,7 @@ def rTM(source, layer1, layer2):
     er1 = layer1.er
     er2 = layer2.er
 
-    return (er1 * kz2 - er2 * kz1) / (er1 * kz2 + er2 * kz1);
+    return (er1 * kz2 - er2 * kz1) / (er1 * kz2 + er2 * kz1)
 
 # TODO: TEST MORE VIGOROUSLY
 def tTM(source, layer1, layer2):
@@ -44,6 +44,6 @@ def tTM(source, layer1, layer2):
     ur1 = layer1.ur
     ur2 = layer2.ur
 
-    eta_1 = sqrt(ur1 / er1);
-    eta_2 = sqrt(ur2 / er2);
-    return eta_2 / eta_1 * (1 + rTM(source, layer1, layer2));
+    eta_1 = sqrt(ur1 / er1)
+    eta_2 = sqrt(ur2 / er2)
+    return eta_2 / eta_1 * (1 + rTM(source, layer1, layer2))

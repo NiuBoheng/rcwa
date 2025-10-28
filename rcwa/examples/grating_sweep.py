@@ -1,3 +1,7 @@
+import sys
+project_root = '/Users/bohengniu/Documents/rcwa/'
+sys.path.insert(0, project_root)
+
 from rcwa import Source, Layer, LayerStack, Crystal, Solver, RectangularGrating
 import numpy as np
 from matplotlib import pyplot as plt

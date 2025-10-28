@@ -1,7 +1,10 @@
 # Author: Jordan Edmunds, Ph.D. Student, UC Berkeley
 # Contact: jordan.e@berkeley.edu
 # Creation Date: 11/01/2019
-#
+import sys
+project_root = '/Users/bohengniu/Documents/rcwa/'
+sys.path.insert(0, project_root)
+
 from rcwa import Material, Layer, LayerStack, Source, Solver, Plotter
 import numpy as np
 import pandas as pd

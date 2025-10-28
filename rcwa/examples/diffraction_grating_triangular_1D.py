@@ -1,3 +1,7 @@
+import sys
+project_root = '/Users/bohengniu/Documents/rcwa/'
+sys.path.insert(0, project_root)
+
 from rcwa import Source, Layer, LayerStack, Crystal, Solver, TriangularGrating
 from rcwa.utils import Plotter
 from rcwa.shorthand import complexArray

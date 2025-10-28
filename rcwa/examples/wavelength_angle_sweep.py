@@ -1,3 +1,7 @@
+import sys
+project_root = '/Users/bohengniu/Documents/rcwa/'
+sys.path.insert(0, project_root)
+
 import numpy as np
 from rcwa import Material, Layer, LayerStack, Source, Solver, Plotter
 import matplotlib.pyplot as plt

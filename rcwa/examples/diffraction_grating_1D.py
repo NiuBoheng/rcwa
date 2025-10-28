@@ -1,3 +1,20 @@
+import os
+import sys
+# 项目结构：
+# rcwa/
+#   ├── rcwa/
+#   |   └── examples/
+#   |       ├── diffraction_grating_1D.py  # 当前文件
+#   |       └── bragg_mirror.py
+#   ├── docs/
+#   └── image/
+
+# 添加项目根目录到Python路径
+current_file = os.path.abspath(__file__)
+# 向上跳3级：examples → rcwa → rcwa → 项目根目录
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(current_file)))
+sys.path.insert(0, project_root)
+
 from rcwa import Source, Layer, LayerStack, Crystal, Solver, RectangularGrating
 from rcwa.shorthand import complexArray
 import numpy as np

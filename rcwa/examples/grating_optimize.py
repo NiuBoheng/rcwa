@@ -1,5 +1,8 @@
-from autograd import grad
+import sys
+project_root = '/Users/bohengniu/Documents/rcwa/'
+sys.path.insert(0, project_root)
 
+from autograd import grad
 from rcwa import Source, Layer, LayerStack, Crystal, Solver, RectangularGrating
 import numpy as np
 from matplotlib import pyplot as plt
@@ -34,5 +37,5 @@ def solve_system():
 if __name__ == '__main__':
     my_grad = solve_system()
     print(my_grad(0.5))
-    #plt.plot(results['thickness'], results['RTot'])
+    # plt.plot(results['thickness'], results['RTot'])
     plt.show()
